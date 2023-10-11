@@ -1,0 +1,5 @@
+x=input("what is the width of the room?")
+y=input("what is the length of the room?")
+z=input("what is the heigh of the room?")
+V=int(x)*int(y)*int(z)
+print("Volume of the room is ", str(V))
