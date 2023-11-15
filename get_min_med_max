@@ -1,0 +1,17 @@
+def get_min_med_max(seq): 
+    n = int(len(seq))
+    sorted_list = sorted(seq)
+    min = sorted_list[0]
+    max = sorted_list[-1]
+    if n%2 == 1:
+        med = sorted_list[int((n-1)/2)]
+    if type(seq) == list and n%2 == 0:
+        med = (sorted_list[int(n/2-1)]+sorted_list[int(n/2)])/2
+    if type(seq)== str and n%2 ==0:
+        med = (sorted_list[int(n/2-1)]+sorted_list[int(n/2)])
+    return (min, med, max)
+
+print(get_min_med_max([0,9,2,5,3]))
+print(get_min_med_max([9,9,2,2,4,3]))
+print(get_min_med_max("baaac"))
+print(get_min_med_max("faaacb"))
