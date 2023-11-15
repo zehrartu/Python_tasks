@@ -1,0 +1,11 @@
+def add_mult(a, b, c):
+
+    values = [a, b, c]
+
+    values.sort()
+
+    result = (values[0] + values[1])* values[2]
+
+    return result
+
+print(add_mult(2,5,4))
