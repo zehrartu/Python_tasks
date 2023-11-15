@@ -1,0 +1,7 @@
+def is_pangram(string):
+    a = string.lower()
+    b = a.replace(" ", "")
+    c = len(set(b))
+    return c == 26 #ForEnglishAlphabet
+print(is_pangram("The quick brown fox jumps over the lazy dog"))
+print(is_pangram("abcd too"))
